@@ -53,8 +53,26 @@
 
 //Conditions and Loops
 
+// fn main(){
+//     for i in 0..11{
+//         print!("{} ",i);
+//     }
+// }
+
+//Loops
+
 fn main(){
-    for i in 0..11{
-        print!("{} ",i);
+    let first_name = String:: from("pratik prajapati");
+    println!("First name {}",get_first_name(str));
+}
+
+fn get_first_name(str : String) -> String{
+    let mut first_name = String:: from("");
+    for c in str.chars(){
+        if c == ' '{
+            break;
+        }
+        first_name.push(c);
     }
+    return first_name;
 }
