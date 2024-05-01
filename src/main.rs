@@ -35,18 +35,26 @@
 //----------------------------------------------------------
 
 //Strings
+// fn main(){
+//     let greeting = String::from("Hello World");
+//     println!("{}",greeting);
 
+//     let char1 = greeting.chars().nth(100);
+//     // print!("char1:{}",char1.unwrap());
+//     //OR
+
+//     match char1{
+//         Some(c) => print!("{}",c),
+//         None => print!("No character at index 100")
+//     }
+// }
+
+//----------------------------------------------------------
+
+//Conditions and Loops
 
 fn main(){
-    let greeting = String::from("Hello World");
-    println!("{}",greeting);
-
-    let char1 = greeting.chars().nth(100);
-    // print!("char1:{}",char1.unwrap());
-    //OR
-
-    match char1{
-        Some(c) => print!("{}",c),
-        None => print!("No character at index 100")
+    for i in 0..11{
+        print!("{} ",i);
     }
 }
